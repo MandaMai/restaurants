@@ -1,23 +1,66 @@
-li {
-  list-style: none;
-}
 
-h3,p,li,td,th,form {
+* {
   font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
 }
 
-h1,h2 {
-  font-family: 'Raleway', sans-serif;
-  margin-top: 20px;
+.masthead {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/00/b6/e9/00b6e9386e299cab05306f53fcdd8e3f.jpg");
+  background-size: cover, auto;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  margin-top: 30%;
+  margin-bottom: 50%;
+  width: 100%;
+  margin: 0;
+  height: 450px;
+  background-color: white;
 }
+
+h1 {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 50px;
+  font-weight: normal;
+  text-align: center;
+  color: LightSlateGray;
+}
+
+.faves h2 {
+  margin-left: 80px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 36px;
+  color: LightSlateGray;
+  font-weight: normal;
+}
+
+.faves  {
+  float: left;
+  width: 70%;
+  z-index: -1;
+}
+aside {
+  float: right;
+  width: 30%;
+
+}
+ aside a img {
+   padding: 5% 15%;
+   margin-top: 10px;
+ }
+
+.rec {
+margin-top: 30px;
+}
+
+
 
 li {
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 table {
-  margin:50px 0 50px 0;
+  margin:50px 15px 50px 15px;
+  width: 100%;
 }
 
 ol li {
@@ -25,10 +68,52 @@ ol li {
 }
 
 nav {
-  font-weight:bold;
+background-color: white;
+height: 50px;
+position: fixed;
+width: 100%;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+nav a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: lightslategray;
+  margin-right: 30px;
 
 }
 
+#home {
+  float: left;
+  margin-left: 5px;
+}
+
+#kitchen {
+  float: right;
+  margin-right: 5px;
+}
+
+body {
+  margin: 0;
+}
+
 main {
-  padding-top: 50px;
+  padding-top: 20px;
+}
+
+.tile {
+margin-left: 40px;
+  float: left;
+}
+
+
+
+
+ul li {
+  list-style: none;
+}
+ul li img {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

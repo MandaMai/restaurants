@@ -4,24 +4,24 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <title>Amanda's Fave Restaurants</title>
   </head>
   <body>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="mykitchen.html">Go to My Kitchen</a>
+      <a href="index.html" id="home">Home</a>
+      <a href="mykitchen.html" id="kitchen">Go to My Kitchen</a>
     </nav>
 
     <main>
-    <h1>The Best Restaurants I Have Found So Far in ...Seattle</h1>
-
-    <div class="intro">
-      <!--Text for intro here-->
+    <div class="masthead">
+      <h1>The Best Restaurants I Have Found So Far in<br>Seattle</h1>
     </div>
 
-    <div class="tip">
-      <h3>An excellent way to find new food in your area is to utilize
-        <a href="https://eat24.com/">Eat24</a>
+
+    <aside>
+      <h3>Not in the mood to sit down somewhere? An excellent way to find new food brought to you, in your area, is to get great local food delivered using
+        <a href="https://eat24.com/"><img src="assets/images/eat24.jpg" alt="Eat24 Logo"></a>
       </h3>
       <ol>
         <li>Open Website</li>
@@ -29,35 +29,47 @@
         <li>Choose preferred <strong>cuisine and method</strong></li>
         <li>Enjoy!</li>
       </ol>
-
+    <div class="rec">
+    <h2>Send a Recommendation</h2>
+    <form class="recommend" action="index.html" method="post">
+      What do you want me to call you?<br> <input type="text" name="name"><br>
+      Where do I send the email?<br> <input type="email" name="email"><br>
+      Comments or Message for Me: <br>
+      <textarea name="comment"></textarea><br>
+      <input type="submit" value="Submit">
     </div>
+    </form>
+  </aside>
+
+    <div class="faves">
     <h2>My Favorite Restaurants</h2>
       <ul>
-        <li>
-          <img src="assets/images/ivars.jpg" width="250" alt="Ivar's Interior"><br>
+        <li class="tile">
+          <img src="assets/images/ivars.jpg" height="200" alt="Ivar's Interior"><br>
           <a href="http://www.ivars.com/locations/acres-of-clams" target="_blank">Ivar's Acres of Clams</a>
         </li>
-        <li>
-          <img src="assets/images/palermo.jpg" width="250" alt="Palermo's Interior"><br>
+        <li class="tile">
+          <img src="assets/images/palermo.jpg" height="200" alt="Palermo's Interior"><br>
           <a href="http://slicelife.com/restaurants/wa/seattle/98112/palermo-pizza-pasta/menu?session=&clientId=" target="_blank" >Palermo Pizza & Pasta</a>
         </li>
-        <li>
-          <img src="assets/images/crumpet.png" width="250" alt="The Crumpet Shop Sign"><br>
+        <li class="tile">
+          <img src="assets/images/crumpet.png" height="200" alt="The Crumpet Shop Sign"><br>
           <a href="http://www.thecrumpetshop.com/" target="_blank">The Crumpet Shop</a>
         </li>
-        <li>
-          <img src="assets/images/bavarianMeats.jpg" width="250" alt="Bavarian Meats Interior"><br>
+        <li class="tile">
+          <img src="assets/images/bavarianMeats.jpg" height="200" alt="Bavarian Meats Interior"><br>
           <a href="http://www.bavarianmeats.com/" target="_blank">Bavarian Meats</a>
         </li>
-        <li>
-          <img src="assets/images/japonessa.jpg" width="250" alt="Japonessa Interior"><br>
+        <li class="tile">
+          <img src="assets/images/japonessa.jpg" height="200" alt="Japonessa Interior"><br>
           <a href="http://www.japonessa.com/" target="_blank">Japonessa</a>
         </li>
-        <li>
-          <img src="assets/images/crime.jpg" width="250" alt="Link to MyKitchen Webpage"><br>
+        <li class="tile">
+          <img src="assets/images/crime.jpg" height="200" alt="Link to MyKitchen Webpage"><br>
           <a href="mykitchen.html">My Kitchen</a>
         </li>
       </ul>
+    </div>
 
       <table>
           <tr>
@@ -99,15 +111,7 @@
           </tr>
         </table>
 
-        <h2>Send a Recommendation</h2>
-        <form class="recommend" action="index.html" method="post">
-          What do you want me to call you? <input type="text" name="name"><br>
-          Where do I send the email? <input type="email" name="email"><br>
-          Comments or Message for Me: <br>
-          <textarea name="comment"></textarea><br>
-          <input type="submit" value="Submit">
 
-        </form>
       </main>
   </body>
 </html>
