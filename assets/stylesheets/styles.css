@@ -4,6 +4,34 @@
   box-sizing: border-box;
 }
 
+nav {
+background-color: white;
+height: 50px;
+position: fixed;
+width: 100%;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+nav a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: lightslategray;
+  margin-right: 30px;
+}
+body {
+  margin: 0
+}
+
+main {
+  padding-top: 20px;
+}
+
+.container {
+  margin-left: 30px;
+}
+
 .masthead {
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/00/b6/e9/00b6e9386e299cab05306f53fcdd8e3f.jpg");
   background-size: cover, auto;
@@ -25,8 +53,7 @@ h1 {
   color: LightSlateGray;
 }
 
-.faves h2 {
-  margin-left: 80px;
+h2 {
   font-family: 'Sedgwick Ave Display', cursive;
   font-size: 36px;
   color: LightSlateGray;
@@ -37,22 +64,38 @@ h1 {
   float: left;
   width: 70%;
   z-index: -1;
+  margin-bottom: 50px;
 }
+
+.faves h2 {
+  margin-left: 80px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 36px;
+  color: LightSlateGray;
+  font-weight: normal;
+}
+
 aside {
   float: right;
   width: 30%;
-
+  margin-bottom: 30px;
 }
- aside a img {
-   padding: 5% 15%;
+
+ aside a img,  .kitchen a img {
    margin-top: 10px;
+   border-radius: 10%;
+   align-items: center;
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   margin-left: 15%;
  }
+
+.kitchen {
+  margin-left: 30px;
+}
 
 .rec {
 margin-top: 30px;
 }
-
-
 
 li {
   margin-bottom: 20px;
@@ -67,24 +110,6 @@ ol li {
     margin-bottom: 0;
 }
 
-nav {
-background-color: white;
-height: 50px;
-position: fixed;
-width: 100%;
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-z-index: 1;
-}
-
-nav a {
-  margin-top: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  color: lightslategray;
-  margin-right: 30px;
-
-}
-
 #home {
   float: left;
   margin-left: 5px;
@@ -95,25 +120,47 @@ nav a {
   margin-right: 5px;
 }
 
-body {
-  margin: 0;
-}
-
-main {
-  padding-top: 20px;
-}
-
 .tile {
 margin-left: 40px;
   float: left;
+  position: relative;
+  padding-bottom: 50px;
 }
 
+.tile img {
+  border-radius: 50%;
+}
 
-
+.tile a {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightslategray;
+  position: absolute;
+  text-align: center;
+  font-family: 'Raleway', cursive;
+  padding-top: 10px;
+}
 
 ul li {
   list-style: none;
 }
 ul li img {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  border: 4px lightslategray solid;
+  border-collapse: collapse;
+
+}
+
+th {
+background-color: lightslategray;
+color: white;
+font-weight: bold;
+}
+
+td {
+  border: 2.5px lightslategray solid;
+
 }
